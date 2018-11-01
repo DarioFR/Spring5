@@ -16,6 +16,9 @@ public class Publisher {
     @OneToOne(mappedBy = "publisher")
     private Book book;
 
+    public Publisher() {
+    }
+
     public Publisher(String name, String address, Book book) {
         this.name = name;
         this.address = address;
